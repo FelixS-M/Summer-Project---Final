@@ -18,7 +18,6 @@ def batchmaster():
 	if not os.path.isdir("./" + foldername + "/"): #check to see if the given folder exists
 		os.mkdir("./" + foldername + "/") #if not, it creates the folder
 	batchloop(filelistlist, lowerlimit, upperlimit, Qmax, foldername)
-	os.system('cp KeplerLDC.txt Test\ 5\ July')
 	return
 
 def dataindexer(inputname): #data must be in the correct order - keplerID then DATE - i.e. files are in chronological order
